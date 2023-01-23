@@ -1,0 +1,5 @@
+In order to solve the challenge, I wrote an inverse of the 'shift' function,
+called 'unshift' and, using a 'pairwise' function, I brute-forced the 'encode'
+function with the information that the key was one character from the alphabet.
+
+Only one of the decodings was human-readable: Do_not_roll_your_own_crypto!

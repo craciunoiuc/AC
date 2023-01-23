@@ -1,0 +1,17 @@
+In order to understand the secret algorithm, I modified it so that it would be
+easier to find a vulnerability. With the help of the modified version, I noticed
+the bits of the key being leaked into the hashes, as a bit swap.
+
+To take advantage of that, I calculated the mean of the bits on the same
+position and their standard deviation. However, I didn't get anything useful,
+as I was expecting the key to be ASCII.
+
+In order to check my algorithm, I created my own sets of hashes and with my
+algorithm I obtained the key for them. Knowing that the algorithm is correct,
+I came back to the given hashes and checked the decryption of the ciphertext in
+AES for all the possible keys, even though they weren't ASCII.
+
+It took a bit of playing with the mean and stdev, but finally I got the key and
+the flag:
+Key:    0x857db43d95c9db3160c9b83b218fef6b
+Flag:   CRYPTO_CTF{01234Hallelujah01234}

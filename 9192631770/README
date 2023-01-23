@@ -1,0 +1,7 @@
+As 9192631770 is the number of periods of radiation defined as one second, it
+was clear that in order to solve the challenge, a timing attack must be used.
+
+However, the timing attack only worked on the first 3 chars of the password.
+The last 2 chars were brute-forced in order to get the correct password (gqsKq)
+and the flag:
+CRYPTO_CTF{0bladiOBl4daTimeG0esOn}

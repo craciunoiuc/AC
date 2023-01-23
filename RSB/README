@@ -1,0 +1,6 @@
+I used the PyCryptodome library to read the private key from the file and get
+the associated RSA numbers. I then calculated RSB's specific numbers and
+decrypted the ciphertext.
+
+I converted the number to bytes and got the flag:
+CRYPTO_CTF{Ce_mare_lucru_ba_o_ecuatie?Faci_18lasuta_dinXegalcuY}

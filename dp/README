@@ -1,0 +1,7 @@
+Having 'dp' from the Chinese Remainder Theorem to RSA leaked, and using the
+formulas from [1], I've brute forced 'p' and then calculated the secret 'd'.
+
+The flag obtained was:
+CRYPTO_CTF{So_I_shouldnt_have_known_dp_(:}
+
+[1] https://hgarrereyn.gitbooks.io/th3g3ntl3man-ctf-writeups/content/2017/picoCTF_2017/problems/cryptography/weirderRSA/weirderRSA.html

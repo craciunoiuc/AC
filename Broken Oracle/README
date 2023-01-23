@@ -1,0 +1,8 @@
+Based on the explanations on
+https://robertheaton.com/2013/07/29/padding-oracle-attack/
+and examining the decryption scheme, I've modified my solution to the 3rd lab
+to take into account the online checking of the ciphertext and the plaintext
+feedback.
+
+Brute-forcing every byte of the message blocks gave me the flag:
+CRYPTO_CTF{FrunzaVerdeFoiDeFicusAlgoritmulNuESigur}

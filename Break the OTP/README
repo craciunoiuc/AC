@@ -1,0 +1,8 @@
+As the encrpytion algorithm is using the non cryptographically secure 'random'
+module that is based on Mersenne Twister, I used the randcrack module in order
+to determine the key bytes that were used to encrypt the key part of the
+plaintext. As the  first part of the laintext was given by the user, I could
+easily determine the first 624 * 4 bytes and thus determine the next ones.
+
+Decrypting with the predicted key gave me the flag:
+CRYPTO_CTF{7h3y-54y-r4nd0m-15-n07-50-532ur3}
